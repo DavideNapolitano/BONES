@@ -1,4 +1,4 @@
-# BONES <img src="C:\Users\david\Documents\GitHub\BONES\images\bones.png" width="30" height="30">
+# BONES <img src="images\bones.png" width="30" height="30">
 
 Bones is a Python library built to benchmark neural estimator of Shapley values.
 
@@ -32,7 +32,7 @@ Currently we support:
     -   <ins>Four Neural Explainers</ins>: DeepExplainer, GradientExplainer, FastSHAP, DASP.
     -   <ins>Three Metrics</ins>: L1, L2 and Kendall Correlation.
     -   <ins>Four Visualization Techniques</ins>: BarPlot, QuadrantPlot, Time/N°Feature Correlation, Time/N°Sample Correlation.
-<br>
+<br></br>
 - 🖼️ **Image Data**  with:
     -   <ins>Four Neural Explainers</ins>: DeepExplaienr, GradientExplainer, FastSHAP, ViT-Shapley.
     -   <ins>Four Metrics</ins>: L1, L2, Inclusion and Exclusion AUC.
