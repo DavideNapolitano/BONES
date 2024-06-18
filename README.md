@@ -54,8 +54,12 @@ Currently we support:
 
 
 ## References
+- SHAP: [Paper](https://papers.nips.cc/paper_files/paper/2017/file/8a20a8621978632d76c43dfd28b67767-Paper.pdf) - [Code](https://github.com/shap/shap)
+- FastSHAP: [Paper](https://arxiv.org/pdf/2107.07436) - [Code](https://github.com/iancovert/fastshap)
+- DASP: [Paper](https://arxiv.org/pdf/1903.10992) - [Code](https://github.com/marcoancona/DASP)
+- ShapleyRegression: [Paper](https://arxiv.org/pdf/2012.01536) - [Code](https://github.com/iancovert/shapley-regression)
+- ViT-Shapley: [Paper](https://github.com/suinleelab/vit-shapley) - [Code](https://github.com/suinleelab/vit-shapley)
 
-<!-- ## Planned Developement -->
 
 If you are using **BONES** for your work, please consider citing us!
 ```bibtex
