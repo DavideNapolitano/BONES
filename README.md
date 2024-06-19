@@ -1,5 +1,4 @@
-# <img src="figure\bones.png" width="30" height="30"> BONES: a **B**enchmark f**O**r Neural Estimation of
-Shapley values
+# <img src="figure\bones.png" width="30" height="30"> BONES: a **B**enchmark f**O**r Neural Estimation of Shapley values
 
 Bones is a Python library built to benchmark neural estimator of Shapley values.
 
