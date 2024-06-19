@@ -72,7 +72,7 @@ TimeFeaturePlot(benchmark).plot()
 ```
 <img src="figure\timefeature_Credit.jpg" width=50%>
 
-Comparison plot to evaluate Shapley Values estimates:
+Comparison plot to evaluate Shapley Values estimates. It can be computed globally o locally by specifying the *index* on the plot method:
 ```python
 BarPlot(bechmark, dataset=Monks).plot()
 ```
