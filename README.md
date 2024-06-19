@@ -89,42 +89,41 @@ QuadrantPlot(benchmark, dataset=Monks).plot()
 
 Import of the modules:
 ```python
-from bones.sv.tabular.explainers import FastSHAPModel, ShapRegModel, DASPModel, ExactModel
-from bones.sv.tabular.datasets import Monks, Census
-from bones.sv.tabular.metrics import L1, L2, Kendal
-from bones.sv.tabular.evaluation import Banckmark
-from bones.sv.tabular.display import TimeSamplePlot, TimeFeaturePlot, BarPlot, QuadrantPlot
+from bones.sv.image.explainers import FastSHAP, ViTShapley, DeepExplainer, GradientExplainer
+from bones.sv.image.datasets import ImageNette
+from bones.sv.image.metrics import L1, L2, AUC
+from bones.sv.image.evaluation import Banckmark
+from bones.sv.image.display import ImagePlot, AUC
 ```
 
 Create the benchmark:
 ```python
-benchmark=Benchmark(
-    explainers=[FastSHAP, ShapReg, DASP], # explainers to test
-    ground_truth=Exact,                   # ground truth use to compare the explainers
-    dataset=[Monks, Census, Credit],      # datasets to test
-    metrics=[L1, L2, Kendal],             # evaluation metrics
-    num_samples=100                       # number of samples to use in each dataset
+benchmark=Benkmark(
+    explainers=[ViTShapley, DeepExplainer, GradientExplainer], # explainers to test
+    ground_truth=FastSHAP,                                     # ground truth use to compare the explainers
+    dataset=[ImageNette],                                      # datasets to test
+    metrics=[L1, L2, AUC],                                     # evaluation metrics
+    num_samples=100                                            # number of samples to use in each dataset
 ).run()
 ```
 
-Print of the metrics results: 
-```python
-benchmark.print_results(Monks) # table results
-```
-<img src="figure\tabresults.png" width=50%>
+The *TableResults* follows the same syntax as for Tabular Data.
 
 
 #### Visualization
+The *TimeSamplePlot* follows the same syntax as for Tabular Data.
+
+The following plot compares Shapley Values masks computed by the explainers on a specific image sample:
 ```python
-TimeSamplePlot(benchmark, dataset=Monks, number_sample=100000, interval=10000, sample_method="random").plot()
-
-TimeFeaturePlot(benchmark).plot() 
-
-BarPlot(bechmark, dataset=Monks).plot()
-
-QuadrantPlot(benchmark, dataset=Monks).plot()
+ImagePlot(bechmark, datset=ImageNette, sample=0).plot()
 ```
+<img src="figure\comparison-cropped.jpg" width=50%>
 
+Plot showing the Inclusion and Exclusion AUC when varying the percentage of important features included/excluded:
+```python
+AUC(benchmark, dataset=ImageNette, num_sample=100).plot()
+```
+<img src="figure\inclusion_curve.jpg" width=40%><img src="figure\exclusion_curve.jpg" width=40%>
 
 
 ## Features
