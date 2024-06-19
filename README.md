@@ -16,6 +16,7 @@ Following we report two examples of the Benchmark on Tabular and Image data:
 
 - Image Data:
 
+
 ## Getting Started
 
 Currently BONES support Tensorflow and PyTorch for Tabular data and only PyTorch for Image Data.
@@ -161,6 +162,8 @@ AUC(benchmark, dataset=ImageNette, num_sample=100).plot()
 ## Authors
 - [Davide Napolitano](mailto:davide.napolitano@polito.it)
 - [Luca Cagliero](mailto:luca.cagliero@polito.it)
+
+For any question, information or if you want to extend our work by adding datasets, models or metrics, please email us!
 
 
 ## References
