@@ -99,7 +99,7 @@ from bones.sv.image.display import ImagePlot, AUC
 
 Create the benchmark:
 ```python
-benchmark=Benkmark(
+benchmark=Benchmark(
     explainers=[ViTShapley, DeepExplainer, GradientExplainer], # explainers to test
     ground_truth=FastSHAP,                                     # ground truth use to compare the explainers
     dataset=[ImageNette],                                      # datasets to test
