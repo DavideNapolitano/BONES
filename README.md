@@ -12,9 +12,9 @@ We provide:
 
 Following we report two examples of the Benchmark on Tabular and Image data:
 
-- Tabular Data: 
+- Tabular Data: [Example](tabular_example.ipynb)
 
-- Image Data:
+- Image Data: [Example](tabular_example.ipynb)
 
 
 ## Getting Started
