@@ -151,6 +151,7 @@ AUC(benchmark, dataset=ImageNette, num_sample=100).plot()
 
 
 ## Planned Developement
+- ⚙️ Image modality under development.
 - ⚙️ Python package.
 - ⚙️ DASP adaptation to PyTorch.
 - ⚙️ DASP adaptation to Tensorflow 2.
