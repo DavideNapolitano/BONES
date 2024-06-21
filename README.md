@@ -145,7 +145,7 @@ AUC(benchmark, dataset=ImageNette, num_sample=100).plot()
 
 - <ins>Four Metrics</ins>: L1 distancec, L2 distance, Inclusion AUC, Exclusion AUC.
 
-- <ins>Four Visualization Techniques</ins>: ImagePlotInclusion AUC, Exclusion AUC, Time/N°Sample Correlation.
+- <ins>Four Visualization Techniques</ins>: ImagePlotInclusion AUC, Exclusion AUC, Time/N°Sample Correlation and ImagePlot
 
 - <ins>Two Datasets</ins>: ImageNette, Pet
 
