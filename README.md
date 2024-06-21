@@ -155,7 +155,7 @@ AUC(benchmark, dataset=ImageNette, num_sample=100).plot()
 
 ### Add Models
 
-Models can be added inside the following path *bones/sv/MODALITY/explainers*, where the folder library can be inserted.
+Models can be added inside the following path *bones/sv/MODALITY/explainers*, where the folder library can be inserted.\
 In *models.py*, a wrapper class can be made to initialize (*__init__()*) e call (*compute()*) the new model.
 
 ## Planned Development
@@ -171,7 +171,7 @@ In *models.py*, a wrapper class can be made to initialize (*__init__()*) e call 
 - [Davide Napolitano](mailto:davide.napolitano@polito.it) - Politecnico di Torino
 - [Luca Cagliero](mailto:luca.cagliero@polito.it) - Politecnico di Torino
 
-For any question, information or if you want to extend our work by adding datasets, models or metrics, please email us!
+For any questions, or information, or if you want to extend our work by adding datasets, models, or metrics, please email us!
 
 
 ## References
