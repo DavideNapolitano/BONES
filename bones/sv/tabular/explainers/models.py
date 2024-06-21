@@ -102,18 +102,18 @@ class ExactExplainerModel():
 
 class FastSHAPModel():
     def __init__(self, df, model, M, num_features, data , data_val, load, dataset):
-        if load:
+
+        if os.path.isfile(f'models/{dataset}_surrogate.pt') and load:
             self.time_train=0
-            # if os.path.isfile(f'{dataset}_surrogate.pt'):
             print('Loading saved surrogate model')
-            surr = torch.load(f'{dataset}_surrogate.pt').to(device)
+            surr = torch.load(f'models/{dataset}_surrogate.pt').to(device)
             surrogate = Surrogate(surr, num_features)
             # else:
                 # run init with load=False
                 # self.__init__(df, model, M, num_features, data , data_val, False, dataset)
             # if os.path.isfile(f'{dataset}_explainer.pt'):
             print('Loading saved explainer model')
-            explainer = torch.load(f'{dataset}_explainer.pt').to(device)
+            explainer = torch.load(f'models/{dataset}_explainer.pt').to(device)
             fastshap = FastSHAP(explainer, surrogate, normalization='additive', link=nn.Softmax(dim=-1))
             self.explainer = fastshap
             # else:
