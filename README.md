@@ -21,11 +21,11 @@ Following we report two examples of the Benchmark on Tabular and Image data:
 
 Currently BONES support Tensorflow and PyTorch for Tabular data and only PyTorch for Image Data.
 
-To Install all dependencies run 
+To Install all dependencies for tabular experiments, run:
 ```
 pip install requirements_tabular.txt
 ```
-
+To Install all dependencies for image experiments, run:
 ```
 pip install requirements_image.txt
 ``` 
@@ -161,6 +161,7 @@ AUC(benchmark, dataset=ImageNette, num_sample=100).plot()
 - ⚙️ DASP adaptation to Tensorflow 2.
 - ⚙️ Support for Text Data.
 - ⚙️ Inclusion Interval Shapley Values.
+- ⚙️ Align Requirements.
 
 
 
