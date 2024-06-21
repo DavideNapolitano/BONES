@@ -164,7 +164,7 @@ In *models.py*, a wrapper class can be made to initialize (*__init__* function) 
 - <ins>Image Data</ins>: the classification model is a ViT pretrained model in the tiny version.
 
 Beckend models in the different explainers are the same as in the original implementations (see References below).\
-AUC curves are computed by means of a ResNet18 (see [FastSHAP](https://github.com/iancovert/fastshap))
+On images, AUC curves are computed by means of a ResNet18 (see [FastSHAP](https://github.com/iancovert/fastshap))
 
 ## 🛠️ Planned Development
 - ⚙️ Image modality under development.
