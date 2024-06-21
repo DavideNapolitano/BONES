@@ -23,7 +23,11 @@ Currently BONES support Tensorflow and PyTorch for Tabular data and only PyTorch
 
 To Install all dependencies run 
 ```
-pip install requirements.txt
+pip install requirements_tabular.txt
+```
+
+```
+pip install requirements_image.txt
 ``` 
 
 Below we provide a two code examples for both modalities to run the benchmark.
