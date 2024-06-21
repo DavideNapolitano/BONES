@@ -87,7 +87,7 @@ class BarPlot():
 
             plt.tight_layout()
             # save figure
-            plt.savefig(f'barplot_{dataset}.pdf', dpi=300)
+            #plt.savefig(f'barplot_{dataset}.pdf', dpi=300)
             plt.show()
 
 class TimeFeaturePlot():
