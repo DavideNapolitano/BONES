@@ -178,7 +178,7 @@ On images, AUC curves are computed by means of a ResNet18 (see [FastSHAP]([https
 - [Davide Napolitano](mailto:davide.napolitano@polito.it) - Politecnico di Torino
 - [Luca Cagliero](mailto:luca.cagliero@polito.it) - Politecnico di Torino
 
-For any questions, or information, or if you want to extend our work by adding datasets, models, or metrics, please email us!
+For any questions, information, or if you want to extend our work by adding datasets, models, or metrics, please email us!
 
 
 ## 📖 References
