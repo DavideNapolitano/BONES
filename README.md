@@ -14,7 +14,7 @@ Following we report two examples of the Benchmark on Tabular and Image data:
 
 - Tabular Data: [Example](tabular_example.ipynb)
 
-- Image Data: [Example](tabular_example.ipynb)
+- Image Data: [Example](image_example.ipynb)
 
 
 ## 🏁 Getting Started
@@ -167,7 +167,6 @@ Beckend models in the different explainers are the same as in the original imple
 On images, AUC curves are computed by means of a ResNet18 (see [FastSHAP]([https://github.com/iancovert/fastshap](https://github.com/iclr1814/fastshap)))
 
 ## 🛠️ Planned Development
-- ⚙️ Image modality under development.
 - ⚙️ Python package.
 - ⚙️ DASP adaptation to PyTorch.
 - ⚙️ DASP adaptation to Tensorflow 2.
