@@ -160,7 +160,7 @@ In *models.py*, a wrapper class can be made to initialize (*__init__* function) 
 
 ## 🏗️ Default Settings
 
-- <ins>Tabular Data</ins>: the classification model is a MultiLayerPerceptro (see paper for details).
+- <ins>Tabular Data</ins>: the classification model is a MultiLayerPerceptron (see paper for details).
 - <ins>Image Data</ins>: the classification model is a ViT pretrained model in the tiny version.
 
 Beckend models in the different explainers are the same as in the original implementations (see References below).\
