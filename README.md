@@ -68,25 +68,25 @@ Plot showing the computational times when managing different numbers of samples:
 ```python
 TimeSamplePlot(benchmark, dataset=Monks, number_sample=100000, interval=10000, sample_method="random").plot()
 ```
-<img src="figure\timesample_Monks.jpg" width=50%>
+<img src="figure\timesample_Monks.jpg" width=60%>
 
 Plot showing the inference times of each explainer when varying the number of fetures:
 ```python
 TimeFeaturePlot(benchmark).plot() 
 ```
-<img src="figure\timefeature_Credit.jpg" width=50%>
+<img src="figure\timefeature_Credit.jpg" width=60%>
 
 Comparison plot to evaluate Shapley Values estimates. It can be computed globally o locally by specifying the *index* on the plot method:
 ```python
 BarPlot(bechmark, dataset=Monks).plot()
 ```
-<img src="figure\barplot_Monks.jpg" width=50%>
+<img src="figure\barplot_Monks.jpg" width=60%>
 
 Quadrant plot comparing inference times and distances:
 ```python
 QuadrantPlot(benchmark, dataset=Monks).plot()
 ```
-<img src="figure\quadrant_Monks.jpg" width=40%>
+<img src="figure\quadrant_Monks.jpg" width=60%>
 
 ### 🖼️ Image Data
 
@@ -122,13 +122,13 @@ The following plot compares Shapley Values masks computed by the explainers on a
 ```python
 ImagePlot(bechmark, datset=ImageNette, sample=0).plot()
 ```
-<img src="figure\comparison_cropped.png" width=75%>
+<img src="figure\comparison_cropped.png" width=80%>
 
 Plot showing the Inclusion and Exclusion AUC when varying the percentage of important features included/excluded:
 ```python
 AUC(benchmark, dataset=ImageNette, num_sample=100).plot()
 ```
-<img src="figure\inclusion_curve.jpg" width=40%><img src="figure\exclusion_curve.jpg" width=40%>
+<img src="figure\inclusion_curve.jpg" width=37%><img src="figure\exclusion_curve.jpg" width=37%>
 
 
 ## 📋 Features
