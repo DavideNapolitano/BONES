@@ -122,7 +122,7 @@ The following plot compares Shapley Values masks computed by the explainers on a
 ```python
 ImagePlot(bechmark, datset=ImageNette, sample=0).plot()
 ```
-<img src="figure\comparison-cropped.jpg" width=70%>
+<img src="figure\comparison-cropped.jpg" width=75%>
 
 Plot showing the Inclusion and Exclusion AUC when varying the percentage of important features included/excluded:
 ```python
