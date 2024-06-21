@@ -158,6 +158,14 @@ AUC(benchmark, dataset=ImageNette, num_sample=100).plot()
 Models can be added inside the following path *bones/sv/MODALITY/explainers*, where the folder library can be inserted.\
 In *models.py*, a wrapper class can be made to initialize (*__init__* function) e call (*__compute__* function) the new model.
 
+## 🏗️ Default Settings
+
+- <ins>Tabular Data</ins>: the classification model is a MultiLayerPerceptro (see paper for details).
+- <ins>Image Data</ins>: the classification model is a ViT pretrained model in the tiny version.
+
+Beckend models in the different explainers are the same as in the original implementations (see References below).\
+AUC curves are computed by means of a ResNet18 (see [FastSHAP](https://github.com/iancovert/fastshap))
+
 ## 🛠️ Planned Development
 - ⚙️ Image modality under development.
 - ⚙️ Python package.
