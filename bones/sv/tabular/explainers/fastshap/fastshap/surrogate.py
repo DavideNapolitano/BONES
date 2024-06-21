@@ -5,7 +5,7 @@ from torch.utils.data import Dataset, TensorDataset, DataLoader
 from torch.utils.data import RandomSampler, BatchSampler
 import sys
 sys.path.append('/')
-from shapleyeval.models.fastshap.fastshap.utils import UniformSampler, DatasetRepeat
+from .utils import UniformSampler, DatasetRepeat
 from copy import deepcopy
 from tqdm.auto import tqdm
 

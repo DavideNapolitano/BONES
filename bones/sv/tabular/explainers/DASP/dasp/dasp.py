@@ -11,7 +11,7 @@ import os
 print(os.getcwd())
 import sys
 sys.path.append("../")
-from shapleyeval.models.LPDN.lpdn import convert_to_lpdn
+from .layers.LPDN.lpdn import convert_to_lpdn
 
 
 class DASP():
