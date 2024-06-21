@@ -17,7 +17,7 @@ Following we report two examples of the Benchmark on Tabular and Image data:
 - Image Data: [Example](tabular_example.ipynb)
 
 
-## Getting Started
+## 🏁 Getting Started
 
 Currently BONES support Tensorflow and PyTorch for Tabular data and only PyTorch for Image Data.
 
@@ -32,9 +32,9 @@ pip install requirements_image.txt
 
 Below we provide a two code examples for both modalities to run the benchmark.
 
-### Tabular Data
+### 𝄜 Tabular Data
 
-#### Benchmark Settings
+####  🔧 Benchmark Settings
 
 Import of the modules:
 ```python
@@ -63,7 +63,7 @@ benchmark.print_results(Monks) # table results
 <img src="figure\tabresults.png" width=50%>
 
 
-#### Visualization
+#### 📊 Visualization
 Plot showing the computational times when managing different numbers of samples:
 ```python
 TimeSamplePlot(benchmark, dataset=Monks, number_sample=100000, interval=10000, sample_method="random").plot()
@@ -88,9 +88,9 @@ QuadrantPlot(benchmark, dataset=Monks).plot()
 ```
 <img src="figure\quadrant_Monks.jpg" width=40%>
 
-### Image Data
+### 🖼️ Image Data
 
-#### Benchmark Settings
+#### 🔧 Benchmark Settings
 
 Import of the modules:
 ```python
@@ -115,7 +115,7 @@ benchmark=Benchmark(
 The *TableResults* follows the same syntax as for Tabular Data.
 
 
-#### Visualization
+#### 📊 Visualization
 The *TimeSamplePlot* and *QuadrantPlot* follow the same syntax as for Tabular Data.
 
 The following plot compares Shapley Values masks computed by the explainers on a specific image sample:
@@ -131,7 +131,7 @@ AUC(benchmark, dataset=ImageNette, num_sample=100).plot()
 <img src="figure\inclusion_curve.jpg" width=40%><img src="figure\exclusion_curve.jpg" width=40%>
 
 
-## Features
+## 📋 Features
 
 ### 𝄜 **Tabular Data**:
 - <ins>Four Traditional Explainers</ins>: Exact, KernelSHAP, Unbiased KernelSHAP, Monte Carlo.
@@ -153,12 +153,12 @@ AUC(benchmark, dataset=ImageNette, num_sample=100).plot()
 
 - <ins>Two Datasets</ins>: ImageNette, Pet
 
-### Add Models
+### 🆕 Add Models
 
 Models can be added inside the following path *bones/sv/MODALITY/explainers*, where the folder library can be inserted.\
 In *models.py*, a wrapper class can be made to initialize (*__init__* function) e call (*__compute__* function) the new model.
 
-## Planned Development
+## 🛠️ Planned Development
 - ⚙️ Image modality under development.
 - ⚙️ Python package.
 - ⚙️ DASP adaptation to PyTorch.
@@ -167,14 +167,14 @@ In *models.py*, a wrapper class can be made to initialize (*__init__* function) 
 - ⚙️ Inclusion Interval Shapley Values.
 - ⚙️ Align Requirements.
 
-## Authors
+## ✍🏼 Authors
 - [Davide Napolitano](mailto:davide.napolitano@polito.it) - Politecnico di Torino
 - [Luca Cagliero](mailto:luca.cagliero@polito.it) - Politecnico di Torino
 
 For any questions, or information, or if you want to extend our work by adding datasets, models, or metrics, please email us!
 
 
-## References
+## 📖 References
 - SHAP: [Paper](https://papers.nips.cc/paper_files/paper/2017/file/8a20a8621978632d76c43dfd28b67767-Paper.pdf) - [Code](https://github.com/shap/shap)
 - FastSHAP: [Paper](https://arxiv.org/pdf/2107.07436) - [Code](https://github.com/iancovert/fastshap)
 - DASP: [Paper](https://arxiv.org/pdf/1903.10992) - [Code](https://github.com/marcoancona/DASP)
