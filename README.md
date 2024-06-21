@@ -60,7 +60,7 @@ Print of the metrics results:
 ```python
 benchmark.print_results(Monks) # table results
 ```
-<img src="figure\tabresults.png" width=50%>
+<img src="figure\tabresults.png" width=60%>
 
 
 #### 📊 Visualization
