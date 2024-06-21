@@ -86,7 +86,7 @@ Quadrant plot comparing inference times and distances:
 ```python
 QuadrantPlot(benchmark, dataset=Monks).plot()
 ```
-<img src="figure\quadrant_Monks.jpg" width=60%>
+<img src="figure\quadrant_Monks.jpg" width=55%>
 
 ### 🖼️ Image Data
 
