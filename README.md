@@ -32,9 +32,9 @@ pip install requirements_image.txt
 
 Below we provide a two code examples for both modalities to run the benchmark.
 
-### 𝄜 Tabular Data
+## 𝄜 Tabular Data
 
-####  🔧 Benchmark Settings
+###  🔧 Benchmark Settings
 
 Import of the modules:
 ```python
@@ -60,37 +60,37 @@ Print of the metrics results:
 ```python
 benchmark.print_results(Monks) # table results
 ```
-<img src="figure\tabresults.png" width=50%>
+<img src="figure\tabresults.png" width=60%>
 
 
-#### 📊 Visualization
+### 📊 Visualization
 Plot showing the computational times when managing different numbers of samples:
 ```python
 TimeSamplePlot(benchmark, dataset=Monks, number_sample=100000, interval=10000, sample_method="random").plot()
 ```
-<img src="figure\timesample_Monks.jpg" width=50%>
+<img src="figure\timesample_Monks.jpg" width=60%>
 
 Plot showing the inference times of each explainer when varying the number of fetures:
 ```python
 TimeFeaturePlot(benchmark).plot() 
 ```
-<img src="figure\timefeature_Credit.jpg" width=50%>
+<img src="figure\timefeature_Credit.jpg" width=60%>
 
 Comparison plot to evaluate Shapley Values estimates. It can be computed globally o locally by specifying the *index* on the plot method:
 ```python
 BarPlot(bechmark, dataset=Monks).plot()
 ```
-<img src="figure\barplot_Monks.jpg" width=50%>
+<img src="figure\barplot_Monks.jpg" width=60%>
 
 Quadrant plot comparing inference times and distances:
 ```python
 QuadrantPlot(benchmark, dataset=Monks).plot()
 ```
-<img src="figure\quadrant_Monks.jpg" width=40%>
+<img src="figure\quadrant_Monks.jpg" width=55%>
 
-### 🖼️ Image Data
+## 🖼️ Image Data
 
-#### 🔧 Benchmark Settings
+### 🔧 Benchmark Settings
 
 Import of the modules:
 ```python
@@ -115,20 +115,20 @@ benchmark=Benchmark(
 The *TableResults* follows the same syntax as for Tabular Data.
 
 
-#### 📊 Visualization
+### 📊 Visualization
 The *TimeSamplePlot* and *QuadrantPlot* follow the same syntax as for Tabular Data.
 
 The following plot compares Shapley Values masks computed by the explainers on a specific image sample:
 ```python
 ImagePlot(bechmark, datset=ImageNette, sample=0).plot()
 ```
-<img src="figure\comparison-cropped.jpg" width=75%>
+<img src="figure\comparison_cropped.png" width=80%>
 
 Plot showing the Inclusion and Exclusion AUC when varying the percentage of important features included/excluded:
 ```python
 AUC(benchmark, dataset=ImageNette, num_sample=100).plot()
 ```
-<img src="figure\inclusion_curve.jpg" width=40%><img src="figure\exclusion_curve.jpg" width=40%>
+<img src="figure\inclusion_curve.jpg" width=37%><img src="figure\exclusion_curve.jpg" width=37%>
 
 
 ## 📋 Features
@@ -160,7 +160,7 @@ In *models.py*, a wrapper class can be made to initialize (*__init__* function) 
 
 ## 🏗️ Default Settings
 
-- <ins>Tabular Data</ins>: the classification model is a MultiLayerPerceptro (see paper for details).
+- <ins>Tabular Data</ins>: the classification model is a MultiLayerPerceptron (see paper for details).
 - <ins>Image Data</ins>: the classification model is a ViT pretrained model in the tiny version.
 
 Beckend models in the different explainers are the same as in the original implementations (see References below).\
