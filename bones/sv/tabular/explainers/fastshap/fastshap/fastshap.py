@@ -5,7 +5,7 @@ import numpy as np
 import sys
 sys.path.append('/')
 from torch.utils.data import Dataset, TensorDataset, DataLoader
-from shapleyeval.models.fastshap.fastshap.utils import ShapleySampler, DatasetRepeat
+from .utils import ShapleySampler, DatasetRepeat
 from tqdm.auto import tqdm
 from copy import deepcopy
 

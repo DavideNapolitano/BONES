@@ -2,8 +2,7 @@ import tensorflow as tf
 from keras import backend as K
 from keras.layers import Dense
 import sys
-sys.path.append("../")
-from shapleyeval.models.LPDN.lpdn import filter_activation
+from .LPDN.lpdn import filter_activation
 # from lpdn import filter_activation
 
 
