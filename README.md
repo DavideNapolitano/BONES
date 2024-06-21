@@ -32,9 +32,9 @@ pip install requirements_image.txt
 
 Below we provide a two code examples for both modalities to run the benchmark.
 
-### 𝄜 Tabular Data
+## 𝄜 Tabular Data
 
-####  🔧 Benchmark Settings
+###  🔧 Benchmark Settings
 
 Import of the modules:
 ```python
@@ -63,7 +63,7 @@ benchmark.print_results(Monks) # table results
 <img src="figure\tabresults.png" width=60%>
 
 
-#### 📊 Visualization
+### 📊 Visualization
 Plot showing the computational times when managing different numbers of samples:
 ```python
 TimeSamplePlot(benchmark, dataset=Monks, number_sample=100000, interval=10000, sample_method="random").plot()
@@ -88,9 +88,9 @@ QuadrantPlot(benchmark, dataset=Monks).plot()
 ```
 <img src="figure\quadrant_Monks.jpg" width=55%>
 
-### 🖼️ Image Data
+## 🖼️ Image Data
 
-#### 🔧 Benchmark Settings
+### 🔧 Benchmark Settings
 
 Import of the modules:
 ```python
@@ -115,7 +115,7 @@ benchmark=Benchmark(
 The *TableResults* follows the same syntax as for Tabular Data.
 
 
-#### 📊 Visualization
+### 📊 Visualization
 The *TimeSamplePlot* and *QuadrantPlot* follow the same syntax as for Tabular Data.
 
 The following plot compares Shapley Values masks computed by the explainers on a specific image sample:
