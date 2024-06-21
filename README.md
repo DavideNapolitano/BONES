@@ -153,8 +153,12 @@ AUC(benchmark, dataset=ImageNette, num_sample=100).plot()
 
 - <ins>Two Datasets</ins>: ImageNette, Pet
 
+### Add Models
 
-## Planned Developement
+Models can be added inside the following path *bones/sv/MODALITY/explainers*, where the folder library can be inserted.
+In *models.py*, a wrapper class can be made to initialize (*__init__()*) e call (*compute()*) the new model.
+
+## Planned Development
 - ⚙️ Image modality under development.
 - ⚙️ Python package.
 - ⚙️ DASP adaptation to PyTorch.
@@ -162,8 +166,6 @@ AUC(benchmark, dataset=ImageNette, num_sample=100).plot()
 - ⚙️ Support for Text Data.
 - ⚙️ Inclusion Interval Shapley Values.
 - ⚙️ Align Requirements.
-
-
 
 ## Authors
 - [Davide Napolitano](mailto:davide.napolitano@polito.it) - Politecnico di Torino
