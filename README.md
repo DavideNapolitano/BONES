@@ -165,8 +165,8 @@ AUC(benchmark, dataset=ImageNette, num_sample=100).plot()
 
 
 ## Authors
-- [Davide Napolitano](mailto:davide.napolitano@polito.it)
-- [Luca Cagliero](mailto:luca.cagliero@polito.it)
+- [Davide Napolitano](mailto:davide.napolitano@polito.it) - Politecnico di Torino
+- [Luca Cagliero](mailto:luca.cagliero@polito.it) - Politecnico di Torino
 
 For any question, information or if you want to extend our work by adding datasets, models or metrics, please email us!
 
