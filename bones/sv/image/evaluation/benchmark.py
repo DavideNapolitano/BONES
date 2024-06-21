@@ -278,7 +278,7 @@ class Benchmark:
 
             if verbose:
                 print("\nInitialize Grand Truth")
-            ground_model = self.ground_truth(self.dataset, self.config, classifierResPT, train_set, val_set, classifierPT, device)
+            ground_model = self.ground_truth(self.dataset, self.config, classifierResPT, train_set, val_set, classifierPT, device, load, verbose)
             print("\nGround Truth:", ground_model.name)
             self.ground_truth_name[self.dataset.name]=ground_model.name
 
