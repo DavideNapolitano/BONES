@@ -116,7 +116,7 @@ The *TableResults* follows the same syntax as for Tabular Data.
 
 
 #### Visualization
-The *TimeSamplePlot* follows the same syntax as for Tabular Data.
+The *TimeSamplePlot* and *QuadrantPlot* follow the same syntax as for Tabular Data.
 
 The following plot compares Shapley Values masks computed by the explainers on a specific image sample:
 ```python
